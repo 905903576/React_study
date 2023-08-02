@@ -21,3 +21,14 @@ root.render(<div>LLL_study</div>);
 // .then(val => {
 //     console.log(val,"zhi");
 // })
+
+// root.render(
+//   <>
+//     <DomeOne title="REACT好好玩" x={10}>
+//       <span>123</span>
+//       <span>321</span>
+//     </DomeOne>
+
+//     <DomeOne title="hahaha" />
+//   </>
+// );
