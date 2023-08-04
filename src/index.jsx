@@ -6,23 +6,45 @@ import "react-app-polyfill/stable";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "@/index.less";
+// import Dialog from "./components/Day03-01-Dialog";
+// import Vote from "./views/Day03-02-Vote函数组件";
+import Vote from "./views/Day03-03-Vote";
 // import DemoOne from "./view/Day02-02-DemoOne";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<div>LLL_study</div>);
 
-// fetch('/jian/subscriptions/recommended_collections')
-// .then(res => res.json())
-// .then(val => {
-//     console.log(val,"jian");
-// })
+/* Day03-02 */
+root.render(
+  <>
+    <Vote title="react 很简单!" />
+  </>
+);
+/* 
+render函数在渲染的时候，如果 type 是：
+    +   字符串：创建一个表情
+    +   普通函数：把函数执行，并且把 props 传递给函数
+    +   构造函数：把构造函数基于 new 执行[也就是创建类的一个实例，也会把解析出来的 props 传递过去]
+        +   每调用一次类组件都会创建一个单独的实例
+        +   把在类组件中编写的 render 函数执行，把返回的 jsx [virtualDOM] 当做组件视图进行渲染
+        例如：
+        new Vote({
+            title: 'react 很简单!'
+        })
+*/
 
-// fetch('/zhi/news/latest')
-// .then(res => res.json())
-// .then(val => {
-//     console.log(val,"zhi");
-// })
+/* Day03-01 */
+// root.render(
+//   <>
+//     <Dialog title="友情提示" content="做好防护!!!" />
 
+//     <Dialog content="学习ing!!!">
+//       <button>确定</button>
+//       <button>sure</button>
+//     </Dialog>
+//   </>
+// );
+
+/* Day02-02 */
 // root.render(
 //   <>
 //     <DemoOne title="REACT好好玩" x={10}>
@@ -36,3 +58,17 @@ root.render(<div>LLL_study</div>);
 //     {/* <DemoOne title="hahaha" /> */}
 //   </>
 // );
+
+// fetch('/jian/subscriptions/recommended_collections')
+// .then(res => res.json())
+// .then(val => {
+//     console.log(val,"jian");
+// })
+
+// fetch('/zhi/news/latest')
+// .then(res => res.json())
+// .then(val => {
+//     console.log(val,"zhi");
+// })
+
+// root.render(<div>LLL_study</div>);
