@@ -8,18 +8,34 @@ import ReactDOM from "react-dom/client";
 import "@/index.less";
 // import Dialog from "./components/Day03-01-Dialog";
 // import Vote from "./views/Day03-02-Vote函数组件";
-import Vote from "./views/Day03-03-Vote";
-import Demo from "./views/Day04-01-Demo2";
+// import Vote from "./views/Day03-03-Vote";
+// import Demo from "./views/Day04-01-Demo2";
+// import Demo from "./views/Day04-02-Demo3";
+import Demo from "./views/Day04-03-Demo4";
 // import DemoOne from "./view/Day02-02-DemoOne";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-/* Day04-01 PureComponent 和 Component 的区别 */
+/* Day04-03 有关 ref 操作的详细解读 */
 root.render(
   <>
     <Demo />
   </>
 );
+
+/* Day04-02 有关 ref 操作的详细解读 */
+// root.render(
+//   <>
+//     <Demo />
+//   </>
+// );
+
+/* Day04-01 PureComponent 和 Component 的区别 */
+// root.render(
+//   <>
+//     <Demo />
+//   </>
+// );
 
 /* Day03-03 */
 // root.render(
