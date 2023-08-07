@@ -147,8 +147,8 @@ class Vote extends React.Component {
           </button>
           <button
             onClick={() => {
-              this.state.oppNum++;
-              this.forceUpdate();
+              // this.state.oppNum++;
+              // this.forceUpdate();
             }}
           >
             反对
