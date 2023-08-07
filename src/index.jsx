@@ -15,26 +15,26 @@ import Demo from "./views/Day04-01-Demo2";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 /* Day04-01 PureComponent 和 Component 的区别 */
-// root.render(
-//   <>
-//     <Demo />
-//   </>
-// );
-
-/* Day03-03 */
 root.render(
   <>
-    <Vote title="react 很简单!" />
+    <Demo />
   </>
 );
 
-setTimeout(() => {
-  root.render(
-    <>
-      <Vote title="5秒后，react 很简单!" />
-    </>
-  );
-}, 5000);
+/* Day03-03 */
+// root.render(
+//   <>
+//     <Vote title="react 很简单!" />
+//   </>
+// );
+
+// setTimeout(() => {
+//   root.render(
+//     <>
+//       <Vote title="5秒后，react 很简单!" />
+//     </>
+//   );
+// }, 5000);
 
 /* Day03-02 */
 // root.render(
