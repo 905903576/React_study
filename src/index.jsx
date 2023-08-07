@@ -9,16 +9,40 @@ import "@/index.less";
 // import Dialog from "./components/Day03-01-Dialog";
 // import Vote from "./views/Day03-02-Vote函数组件";
 import Vote from "./views/Day03-03-Vote";
+import Demo from "./views/Day04-01-Demo2";
 // import DemoOne from "./view/Day02-02-DemoOne";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-/* Day03-02 */
+/* Day04-01 PureComponent 和 Component 的区别 */
+// root.render(
+//   <>
+//     <Demo />
+//   </>
+// );
+
+/* Day03-03 */
 root.render(
   <>
     <Vote title="react 很简单!" />
   </>
 );
+
+setTimeout(() => {
+  root.render(
+    <>
+      <Vote title="5秒后，react 很简单!" />
+    </>
+  );
+}, 5000);
+
+/* Day03-02 */
+// root.render(
+//   <>
+//     <Vote title="react 很简单!" />
+//   </>
+// );
+
 /* 
 render函数在渲染的时候，如果 type 是：
     +   字符串：创建一个表情
@@ -32,7 +56,7 @@ render函数在渲染的时候，如果 type 是：
         })
 */
 
-/* Day03-01 */
+/* Day03-01 对话框组件*/
 // root.render(
 //   <>
 //     <Dialog title="友情提示" content="做好防护!!!" />
@@ -44,7 +68,7 @@ render函数在渲染的时候，如果 type 是：
 //   </>
 // );
 
-/* Day02-02 */
+/* Day02-02 DemoOne 静态组件 */
 // root.render(
 //   <>
 //     <DemoOne title="REACT好好玩" x={10}>
