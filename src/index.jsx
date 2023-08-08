@@ -11,17 +11,34 @@ import "@/index.less";
 // import Vote from "./views/Day03-03-Vote";
 // import Demo from "./views/Day04-01-Demo2";
 // import Demo from "./views/Day04-02-Demo3";
-import Demo from "./views/Day04-03-Demo4";
+// import Demo from "./views/Day04-03-Demo4";
+// import Demo from "./views/Day05-01-Demo1";
+// import Demo from "./views/Day05-02-Demo2";
+import Demo from "./views/Day05-03-Demo3";
 // import DemoOne from "./view/Day02-02-DemoOne";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-/* Day04-03 有关 ref 操作的详细解读 */
+/* Day05-02 setState 进阶处理 */
 root.render(
   <>
     <Demo />
   </>
 );
+
+/* Day05-01 setState 进阶处理 */
+// root.render(
+//   <>
+//     <Demo />
+//   </>
+// );
+
+/* Day04-03 有关 ref 操作的详细解读 */
+// root.render(
+//   <>
+//     <Demo />
+//   </>
+// );
 
 /* Day04-02 有关 ref 操作的详细解读 */
 // root.render(
