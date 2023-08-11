@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>事件委托</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body,
+      html {
+        height: 100%;
+        overflow: hidden;
+      }
+      .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      #root {
+        width: 300px;
+        height: 300px;
+        background-color: lightblue;
+      }
+      #outer {
+        width: 200px;
+        height: 200px;
+        background-color: lightgreen;
+      }
+      #inner {
+        width: 100px;
+        height: 100px;
+        background-color: lightpink;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" class="center">
+      <div id="outer" class="center">
+        <div id="inner" class="center"></div>
+      </div>
+    </div>
+
+    <script>
+      // ev.stopPropagation(): 阻止事件的传播 [包含捕获和冒泡阶段]
+      // ev.stopImmediatePropagation(): 也是组织事件传播，只不过它可以把当前元素绑定的其他方法 [同级的]，如果还未执行，也不会再让其执行了 !!
+      /* const html = document.querySelector("html"),
+        body = document.querySelector("body"),
+        root = document.querySelector("#root"),
+        outer = document.querySelector("#outer"),
+        inner = document.querySelector("#inner");
+
+      root.addEventListener(
+        "click",
+        function (ev) {
+          // ev.stopPropagation(); //  阻止捕获
+          console.log("root 捕获");
+        },
+        true
+      );
+
+      root.addEventListener("click", function () {
+        console.log("root 冒泡");
+      });
+
+      outer.addEventListener(
+        "click",
+        function () {
+          console.log("outer 捕获");
+        },
+        true
+      );
+
+      outer.addEventListener("click", function () {
+        console.log("outer 冒泡");
+      });
+
+      inner.addEventListener(
+        "click",
+        function () {
+          console.log("inner 捕获");
+        },
+        true
+      );
+
+      inner.addEventListener("click", function (ev) {
+        ev.stopPropagation(); // 阻止冒泡
+        // ev.stopImmediatePropagation()
+        console.log("inner 冒泡");
+      }); */
+    </script>
+
+    <script>
+      /* 
+    事件委托：利用事件的传播机制，实现的一套事件绑定处理方案
+      例如：一个容器中，有很多元素都要在点击事件的时候做一些事情
+        传统方案：首先获取需要操作的元素，然后逐一做事件绑定
+        事件委托：只需要给容器做一个事件绑定 [点击内部的任何元素，根据时间的冒泡传播机制，都会让容器的点击事件
+        触发；我们在这里，根据事件源，做不同的事情就可以了]
+        优势：
+          + 提高 JS 代码运行的性能，并把处理的逻辑都集中在一起 !!
+          + 某些需求必须基于事件委托处理，例如：除了点击 xxx 外，点击其余的任何东西，都做 xxx 事情
+          + 给动态绑定的元素做事件绑定
+          + ...
+        限制：
+          +当前操作的时间必须支持冒泡传播机制才可以
+            例如：mouseenter/mouseleave 事件，是不支持冒泡传播机制的
+          + 如果单独做的事件绑定中，做了事件传播机制的阻止，那么事件委托中的操作也不会生效 !!
+    */
+      const body = document.body;
+      body.addEventListener("click", function (ev) {
+        // ev.target: 事件源 [点击的是谁，谁就是事件源]
+        // console.log(ev.target);
+        let target = ev.target,
+          id = target.id;
+        if (id === "root") {
+          console.log("root");
+          return;
+        }
+        if (id === "outer") {
+          console.log("outer");
+          return;
+        }
+        if (id === "inner") {
+          console.log("inner");
+          return;
+        }
+        // do something...
+      });
+
+      /* const body = document.body,
+        root = document.querySelector("#root"),
+        outer = document.querySelector("#outer"),
+        inner = document.querySelector("#inner");
+
+      outer.addEventListener("click", function (ev) {
+        console.log("outer");
+      }); */
+    </script>
+  </body>
+</html>

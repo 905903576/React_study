@@ -7,24 +7,41 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "@/index.less";
 // import Dialog from "./components/Day03-01-Dialog";
-// import Vote from "./views/Day03-02-Vote函数组件";
-// import Vote from "./views/Day03-03-Vote";
-// import Demo from "./views/Day04-01-Demo2";
-// import Demo from "./views/Day04-02-Demo3";
-// import Demo from "./views/Day04-03-Demo4";
-// import Demo from "./views/Day05-01-Demo1";
-// import Demo from "./views/Day05-02-Demo2";
-import Demo from "./views/Day05-03-Demo3";
-// import DemoOne from "./view/Day02-02-DemoOne";
+// import Vote from "./views/Day03/02-Vote函数组件";
+// import Vote from "./views/Day03/03-Vote";
+// import Demo from "./views/Day04/01-Demo2";
+// import Demo from "./views/Day04/02-Demo3";
+// import Demo from "./views/Day04/03-Demo4";
+// import Demo from "./views/Day05/01-Demo1";
+// import Demo from "./views/Day05/02-Demo2";
+// import Demo from "./views/Day05/03-Demo3";
+// import Demo from "./views/Day06/01-Demo1";
+import Demo from "./views/Day06/02-Demo2";
+
+// import DemoOne from "./view/Day02/02-DemoOne";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-/* Day05-02 setState 进阶处理 */
+/* Day06-02 React 合成事件原理 */
 root.render(
   <>
     <Demo />
   </>
 );
+
+/* Day06-01 React 合成事件语法 */
+// root.render(
+//   <>
+//     <Demo />
+//   </>
+// );
+
+/* Day05-02 setState 进阶处理 */
+// root.render(
+//   <>
+//     <Demo />
+//   </>
+// );
 
 /* Day05-01 setState 进阶处理 */
 // root.render(
