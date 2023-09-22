@@ -16,18 +16,32 @@ import "@/index.less";
 // import Demo from "./views/Day05/02-Demo2";
 // import Demo from "./views/Day05/03-Demo3";
 // import Demo from "./views/Day06/01-Demo1";
-import Demo from "./views/Day06/02-Demo2";
+// import Demo from "./views/Day06/02-Demo2";
+// import Demo from "./views/Day07/01-Demo1";
+import Demo from "./views/Day07/02-Demo2";
 
 // import DemoOne from "./view/Day02/02-DemoOne";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-/* Day06-02 React 合成事件原理 */
+/* Day07-01 移动端 touch 事件解决按钮点击每 300ms 触发一次问题 */
+/* 或者使用 FastClick 解决移动端使用 click 事件的 300ms 延迟问题 */
+/* 
+  import FastClick from 'fastclick'
+  FastClick.attach(document.body)
+*/
 root.render(
   <>
     <Demo />
   </>
 );
+
+/* Day06-02 React 合成事件原理 */
+// root.render(
+//   <>
+//     <Demo />
+//   </>
+// );
 
 /* Day06-01 React 合成事件语法 */
 // root.render(

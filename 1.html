@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .arc-container {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        background-color: skyblue;
+      }
+
+      .arc {
+        /* width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 10px solid #333;
+        border-bottom-color: transparent;
+        border-color: rgba(#fbdd79, #976455, #fa8865, 1); */
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 10px solid transparent;
+        border-image: linear-gradient(135deg, #333, #ff9900) 1;
+      }
+      /* .sleepContentView {
+        width: 242px;
+        height: 242px;
+        background-image: linear-gradient(#aaf0d8, #2ed);
+        border-radius: 50%;
+        text-align: center;
+        padding: 20px;
+        font-size: 28px;
+        box-sizing: border-box;
+      } */
+      .circle {
+        width: 242px;
+        height: 242px;
+        border: 10px solid;
+        border-image: linear-gradient(0deg, #a002df, #045dfe) 10 10;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sleepContentView"><div class="circle"></div></div>
+  </body>
+</html>
