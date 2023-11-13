@@ -7,7 +7,12 @@ import ReactDOM from "react-dom/client";
 // import Demo from "./view/useState的处理机制_2";
 // import Demo from "./view/Demo2";
 // import Demo from "./view/Demo3";
-import Demo from "./view/Demo4";
+// import Demo from "./view/Demo4";
+// import Demo from "./view/Demo5";
+// import Demo from "./view/Demo6";
+// import Demo from "./view/Demo7";
+// import Demo from "./view/Demo8";
+import Demo from "./view/Demo9";
 
 // import Vote from "./view/Vote";
 
@@ -20,7 +25,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <ConfigProvider locale={zhCN}>
     {/* <Task /> */}
-    <Demo x={10} y={20} />
+    <Demo />
     {/* <Vote title="React需要JS功底" /> */}
   </ConfigProvider>
 );
