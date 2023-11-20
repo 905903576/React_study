@@ -6,7 +6,7 @@ import "./Demo.less";
 /* 
   useState自带了性能优化的机制
     + 每一次修改状态值的时候，会拿最新要修改的值和之前的状态值做比较 [基于 Object.is 作比较]
-    + 如果发现两次的值是一样的，则不会修改状态，也不会让视图更新 [可以理解为: 雷士与 PureComponent,在
+    + 如果发现两次的值是一样的，则不会修改状态，也不会让视图更新 [可以理解为: 类似与 PureComponent,在
     shouldComponentUpdate 中做了浅比较和优化]
 */
 
