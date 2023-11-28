@@ -1,3 +1,11 @@
+/*
+ * @Author: LLL 905903576@qq.com
+ * @Date: 2023-09-22 11:52:10
+ * @LastEditors: LLL 905903576@qq.com
+ * @LastEditTime: 2023-11-21 10:12:49
+ * @FilePath: \project_1\src\index.jsx
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 import React from "react";
 import ReactDOM from "react-dom/client";
 // import Task from "./views/Task";
@@ -12,7 +20,11 @@ import ReactDOM from "react-dom/client";
 // import Demo from "./view/Demo6";
 // import Demo from "./view/Demo7";
 // import Demo from "./view/Demo8";
-import Demo from "./view/Demo9";
+// import Demo from "./view/Demo9";
+// import Task from "./view/Task重构";
+// import Demo from "./view/useMemo构建计算缓存/Demo1";
+// import Demo from "./view/useCallback缓存函数/Demo1";
+import Demo from "./view/自定义HOOK提取公共逻辑/Demo1";
 
 // import Vote from "./view/Vote";
 
