@@ -2,6 +2,14 @@
  * @Author: LLL 905903576@qq.com
  * @Date: 2023-09-22 11:52:10
  * @LastEditors: LLL 905903576@qq.com
+ * @LastEditTime: 2023-11-28 16:10:42
+ * @FilePath: \project_1\src\index.jsx
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
+/*
+ * @Author: LLL 905903576@qq.com
+ * @Date: 2023-09-22 11:52:10
+ * @LastEditors: LLL 905903576@qq.com
  * @LastEditTime: 2023-11-21 10:12:49
  * @FilePath: \project_1\src\index.jsx
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
